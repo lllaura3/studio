@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    $(document).ready(function(){
+        $('.bar').addClass('open');
+    });
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,24 +22,10 @@
     background-color: white; }
            </style>
 <div class="bar"></div>
-.bar {
-    image: url("https://clipground.com/images/black-rectangle-png-12.png");
-    size: 100%;
-    position-y: center;
-    repeat: no-repeat;
-    position: center;
-    width: 0;
-    height: 70px;
-    transition: 40s width;
 
-}
-.bar.open {
-    width: 100%;
-}
 
-$(document).ready(function(){
-    $('.bar').addClass('open');
-});
+
+
 <!--
 
     <div class="bar"></div>
@@ -70,7 +59,20 @@ $(document).ready(function(){
 
 
 <body>
+    .bar {
+        image: url("https://clipground.com/images/black-rectangle-png-12.png");
+        size: 100%;
+        position-y: center;
+        repeat: no-repeat;
+        position: center;
+        width: 0;
+        height: 70px;
+        transition: 40s width;
     
+    }
+    .bar.open {
+        width: 100%;
+    }
     <center>
     <img src="https://live.staticflickr.com/6154/6142234914_3bfac7c573_k.jpg" alt="¿">
    <p> <a href="./index.html">index</a></p>
