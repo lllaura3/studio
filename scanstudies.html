@@ -8,15 +8,8 @@
 </head>
 <style>
 
-    div {
-      height: 150px;
-      background-color: black;
-      transition: 40s height;
-    }
-  
-  </style>
-  
-  <div></div>
+<div class="bar"></div>
+
 <style> 
     body
     {  
@@ -27,7 +20,51 @@
     {color: black;
     background-color: white; }
            </style>
+
+.bar {
+    image: url("https://clipground.com/images/black-rectangle-png-12.png");
+    size: 100%;
+    position-y: center;
+    repeat: no-repeat;
+    position: center;
+    width: 0;
+    height: 70px;
+    transition: 40s width;
+
+
+.bar.open {
+    width: 100%;
+}
+}
+$(document).ready(function(){
+    $('.bar').addClass('open');
+});
 <!--
+
+    <div class="bar"></div>
+
+
+.bar {
+    image: url("https://clipground.com/images/black-rectangle-png-12.png");
+    size: 100%;
+    position-y: center;
+    repeat: no-repeat;
+    position: center;
+    width: 0;
+    height: 70px;
+    transition: 40s width;
+}
+
+.bar.open {
+    width: 100%;
+}
+
+
+$(document).ready(function(){
+    $('.bar').addClass('open');
+});
+
+
 <audio id="musicplayer" autoplay>
     <source src="/sstv.mp3">
   </audio>
