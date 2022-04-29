@@ -79,18 +79,19 @@ $(document).ready(function(){
 
 <body>
    
-
+<!--
 
     <video width="100%" height="100%"
        onmouseenter="VideoController(true, this)"
-       onmouseleave="VideoController(false, this)"
-       src="stvo.mp4" type="video/mp4" loop>
+       onmouseleave="VideoController(false, this)" loop >
+       <source src="stvo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+-->
 
-
-click on the right button or ctrl+click to play the video
-<video width="100%" height="100%" autoplay>
+click on the right button or ctrl+click to unmute the video
+<videocontrols muted>
+    width="100%" height="100%" autoplay>
     <source src="sstvo.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
